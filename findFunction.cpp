@@ -19,7 +19,7 @@ int main()
 size_t find(const string &str,const string &toFind)
 {
      size_t i,j;
-     for(i=0;i<str.size();i++)
+     for(i=0;i<=str.size()-toFind.size();i++)
      {
           for(j=0;j<toFind.size();j++)
                if(str[i+j]!=toFind[j])
